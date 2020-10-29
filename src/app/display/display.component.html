@@ -1,0 +1,15 @@
+<table align="center" class="table">
+    <thead>
+        <tr>
+            <th> Name </th>
+            <th> Price </th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let coin of coins | async">
+                <td>{{ coin.name }}</td>
+                <td>{{ coin.price }}</td>
+            </tr>
+        </tbody>
+</table>
+   
